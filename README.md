@@ -163,28 +163,6 @@ To extend coverage, add a synthetic test and a referenced decoder in
 `payloads.py`, or extend `commands.py` for command names. Preserve original
 bytes and explicit fallback when a format cannot safely be interpreted.
 
-## Publishing checklist
-
-This folder is laid out as a standalone extension: `extension.json`, Python
-entry point and helper modules, this README, MIT license and synthetic tests.
-It has no icon yet. Before publishing:
-
-1. Review author metadata, license and the files intended for public release.
-2. Test a fresh local installation and all settings in Logic 2.
-3. If adding an icon or screenshot, use an image you have the right to distribute;
-   do not include private traffic, device identities or deployment details.
-4. Create a public **GitHub** repository and upload this standalone project.
-5. Create a GitHub release with a tag matching the manifest version, currently
-   `v0.2.0`. Describe features and limitations in the release notes.
-6. Use **Publish** in Logic's Extensions panel, or
-   [Saleae Marketplace Publish](https://marketplace.saleae.com/publish), and
-   submit the GitHub repository URL. Follow the account authorization flow.
-7. Check that the extension appears and installs from the Marketplace.
-
-For later releases, bump `extension.json` and create a new GitHub release.
-These steps are manual; this repository does not create a remote, publish a
-release or submit to the Marketplace automatically.
-
 ## References
 
 Command identifiers and payload layouts were checked against public
